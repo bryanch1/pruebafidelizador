@@ -1,0 +1,14 @@
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+mascota_index:
+    path: /mascota
+    defaults: {_controller: AppBundle:Mascota:Index}
+
+persona_index:
+    path: /persona
+    defaults: { _controller: AppBundle:Persona:Index }
+login:
+    path:     /login
+    defaults: { _controller: AppBundle:Security:login }
